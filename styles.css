@@ -1,0 +1,110 @@
+
+header {
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+#weather-info, #saved-locations {
+  margin-top: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+#container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#weatherData {
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #5caff3;
+}
+
+#weatherData::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(cielo.jpg);
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.5;
+    z-index: 1; 
+}
+
+#weatherData > * {
+    position: relative; 
+    z-index: 2; 
+    
+}
+
+.weather-card {
+  cursor: auto; /* Usa auto para asegurar que no se vea como texto editable */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  
+  text-align: center;
+}
+
+
+.weather-card img {
+    width: 50px;
+    height: 50px;
+   
+}
+
+.weather-card p {
+    margin: 5px 0;
+}
+#locations, button {
+  cursor: pointer; /* Asegura que los botones generados sean clicables */
+}
+h1, h2 {
+  cursor: auto; /* Deja el comportamiento predeterminado */
+}
+
+button {
+  cursor: pointer; /* Asegúrate de que los botones puedan ser clicados */
+}
+#container, #weatherData {
+  cursor: auto; /* Si hay otros contenedores que necesitan este ajuste */
+}

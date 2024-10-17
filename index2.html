@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación de Clima</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head> 
+<body>
+  <header>
+    <h1 style=" cursor: auto;">Aplicación de Clima</h1>
+  </header>
+
+  <main>
+    <section id="location-form">
+      <h2>Agregar Ubicación</h2>
+      <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Ingresa el nombre de la ciudad" required>
+        <button type="submit">Buscar</button>
+      </form>
+      <section>
+        <button id="clearStorage">Limpiar ciudades guardadas</button>
+      </section>
+    </section>
+
+    <section id="weather-info">
+      <h2>Pronostico del clima </h2>
+      <strong><div id="weatherData"></div></strong>
+    </section>
+
+    <section id="container">
+      <h2>Ubicaciones Guardadas</h2>
+      <div id="locations"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

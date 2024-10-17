@@ -1,0 +1,17 @@
+{
+    "name": "APP DE CLIMA",
+    "short_name": "CLIMA",
+    "description": "Consulta el clima y guarda tus ciudades favoritas.",
+    "start_url": "/index2.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#5CAFF3",
+    "icons": [
+       
+        {
+            "src": "/flecha-abajo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
